@@ -1,0 +1,68 @@
+//news single videos
+
+.wp-video, video.wp-video-shortcode, .mejs-container, .mejs-overlay.load {
+	width: 100% !important;
+	height: 100% !important;
+}
+.mejs-container {
+	padding-top: 56.25%;
+}
+.wp-video, video.wp-video-shortcode {
+	max-width: 100% !important;
+}
+video.wp-video-shortcode {
+	position: relative;
+}
+.mejs-mediaelement {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.mejs-controls {
+	display: none;
+}
+.mejs-overlay-play {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: auto !important;
+	height: auto !important;
+}
+
+
+//project gallery videos
+
+
+.flexslider-project-slide-video{
+	display: none;
+	video{
+		width: 100%;
+		height: auto;
+		max-width: 100%;
+	}
+}
+
+
+//home slideshow videos
+
+.home-slide-video{
+	video{
+		// height: inherit;
+		// width: auto;
+		// max-width: none;
+		position: absolute;
+		top: 50%; 
+		left: 50%;
+		-webkit-transform: translateX(-50%) translateY(-50%);
+		transform: translateX(-50%) translateY(-50%);
+		min-width: 100%; 
+		min-height: 100%; 
+		width: auto; 
+		height: auto;
+		z-index: -1000; 
+		overflow: hidden;
+	}
+}

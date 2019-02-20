@@ -1,0 +1,31 @@
+
+//this file was created on 12-9-17, as part of a set of upgrades to the site, made by greg nemes of work-shop design studio. this comes after some updates were made by pixelslam, which were not fully documented, so the code is a bit fragile.
+
+//previously included in header.php, moved here 12-9-17
+//@import 'http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css';
+
+//import the css file that was being used as of 12-9-17, with a minor improvement to import URLS 
+//this file is not generated from the original style.less file, there are inline modifications made presumably by pixelslam, a few years ago
+@import 'style-saved-adjusted.css';
+
+//comment out for production
+//@import "../fonts/pictograms.css";@import "../fonts/MyFontsWebfontsKit.css";@import "../fonts/entypo.css";
+
+// @import 'flexslider-updated.css';
+
+//this file is made by pixelslam, and has some additions by greg nemes
+@import 'style-additions.css';
+
+//these variables were imported from the original style.less, and converted to scss, and then culled.
+@import 'variables';
+
+@import 'modals';
+
+@import 'upgrades';
+
+@import 'work-grid-v2';
+
+@import 'video';
+
+@import 'announcements_and_news';
+

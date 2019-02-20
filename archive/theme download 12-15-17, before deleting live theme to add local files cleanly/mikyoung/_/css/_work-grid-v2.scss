@@ -1,0 +1,217 @@
+
+
+//simple three column layout
+
+//#grid sizing:
+
+//@media (min-width: 1440px)
+/*#grid {
+    width: 1160px;
+    left: 260px;
+}*/
+
+//@media (min-width: 970px)
+/*#grid {
+    width: 860px;
+    left: 0;
+}*/
+
+//@media (min-width: 580px)
+/*#grid {
+    width: 100%;
+    left: 0;
+}*/
+
+//@media (min-width: 480px)
+/*#grid {
+    width: 480px;
+    left: 0;
+}*/
+
+//@media (min-width: 300px)
+/*#grid {
+    width: 300px;
+    left: 0;
+}*/
+
+//non-media, although this is ignored
+/*#grid {
+    width: 1120px;
+    left: 260px;
+}*/
+
+//gutters: 20px
+//columns: 140px
+
+//lg
+//grid width: 1104-40 = 
+
+//needed when masonry is not running
+#grid{
+	position: relative;
+}
+
+
+$gutter: 30px;
+$gutters: $gutter * 3;
+
+//grid sizes should be 20px larger than space to fill, to set the container size first
+$grid-lg-container: 1060px;
+$grid-lg: $grid-lg-container + $gutter + 1px;
+$grid-lg-trimmed: $grid-lg - $gutters;
+$w-lg: $grid-lg-trimmed / 3;
+$h-lg: 330px;
+
+
+$grid-md-container: 972px;
+$grid-md: $grid-md-container + $gutter + 1px;
+$grid-md-trimmed: $grid-md - $gutters;
+$w-md: $grid-md-trimmed / 3;
+$h-md: 300px;
+
+$grid-sm-container: 748px;
+$grid-sm: $grid-sm-container + $gutter + 1px;
+$grid-sm-trimmed: $grid-sm - $gutters;
+$w-sm: $grid-sm-trimmed / 3;
+$h-sm: 250px;
+
+$grid-xs-container: 450px;
+$grid-xs: $grid-xs-container + $gutter + 1px;
+$grid-xs-trimmed: $grid-xs - $gutters;
+$w-xs: $grid-xs-trimmed / 3;
+$h-xs: 200px;
+
+//general
+.page-id-74{
+	#grid{
+		position: relative;
+		overflow: none;
+		//outline: 1px solid black;
+
+		.element-small, .element-large{
+
+			.image-container{
+				width: auto;
+				height: auto;
+
+				img{
+					height: auto !important;
+					width: auto !important;
+				}
+			}
+		}
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.page-id-74{
+
+		#grid{
+			width: 100%;
+			left: -15px;
+			margin: 0;
+			margin-top: 60px;
+
+			.element-small, .element-large{
+				width: 127px !important;
+				height: 200px !important;
+				margin-left: 15px;
+			}
+		}
+	}	
+}
+
+@media screen and (max-width: 767px) {
+	.page-id-74{
+
+		#grid{
+			width: $grid-xs + 1px;
+			left: -$gutter;
+			margin: 0;
+
+			.element-small, .element-large{
+				width: $w-xs !important;
+				height: $h-xs !important;
+				margin-left: $gutter;
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) and (min-width: 768px){
+	.page-id-74{
+
+		#grid{
+			width: $grid-sm + 1px;
+			left: -$gutter;
+			margin: 0;
+
+			.element-small, .element-large{
+				width: $w-sm !important;
+				height: $h-sm !important;
+				margin-left: $gutter;
+			}
+		}
+	}
+}
+
+
+//md to lg
+@media screen and (min-width: 992px) {
+	.page-id-74{
+
+		#grid{
+			left: -$gutter;
+			width: $grid-md + 1px;
+
+			.element-small, .element-large{
+				width: $w-md !important;
+				height: $h-md !important;
+				margin-left: $gutter;
+			}
+		}
+	}
+}
+
+
+//md to lg
+@media screen and (min-width: 992px) {
+	.page-id-74{
+
+		#grid{
+			left: -$gutter;
+			width: $grid-md;
+
+			.element-small, .element-large{
+				width: $w-md !important;
+				height: $h-md !important;
+				margin-left: $gutter;
+			}
+
+			.element:nth-child(3n){
+				//border: 1px solid red;
+				//margin-right: 0;
+			}
+		}
+	}
+}
+
+
+//lg and up
+@media screen and (min-width: 1440px) {
+	
+	.page-id-74{
+		#grid{
+			left: 260px;
+			width: $grid-lg + 1px;
+
+			.element-small, .element-large{
+				width: $w-lg !important;
+				height: $h-lg !important;
+				margin-left: $gutter;
+			}
+		}
+	}
+}
+

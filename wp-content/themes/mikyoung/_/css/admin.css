@@ -1,0 +1,12 @@
+
+.acf-field-message{
+	background: #ddff81;
+}
+
+.acf-field-message h2{
+	display: none;
+}
+
+.acf-field-message label{
+	margin-top: 10px !important;
+}

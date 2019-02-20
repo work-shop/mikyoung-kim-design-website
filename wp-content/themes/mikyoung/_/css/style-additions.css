@@ -1,0 +1,155 @@
+
+
+
+
+#header nav li a.social-link{
+	display: inline;
+}
+
+#footer li a.social-link{
+	display: inline;
+}
+
+#footer .footer-nav li.social-item:hover{
+	background: none;
+}
+
+#header .header-nav li.social-item:hover{
+	background: none;
+}
+
+#header .header-nav .col-sm-2{
+	padding-left: 0;
+}
+
+#footer .footer-nav .col-sm-2{
+	padding-left: 0;
+}
+
+
+@media all and (min-width: 300px) {
+
+	#filters{
+		position: fixed !important;
+		top: 60px !important;
+	}
+	
+	.after #filters{
+		position: fixed !important;
+		top: 60px !important;		
+	}
+
+}
+
+@media all and (min-width: 1440px) {
+
+	#filters{
+		position: fixed !important;
+		top: 76px !important;
+	}
+	
+	.after #filters{
+		position: fixed !important;
+		top: 76px !important;		
+	}
+	
+	#about_publications li {
+		min-height: 380px;
+	}
+
+}
+
+
+a{
+	outline: 0 !important;
+}
+
+.ie a{
+	outline: 0;
+	text-decoration: none;
+}
+
+#header.open{
+	overflow: scroll !important;
+}
+
+text-rendering: auto;
+
+.single-project .flexslider-project .slides .flex-active-slide {
+opacity: 1;
+}
+
+
+
+@media all and (min-width: 1440px) and (max-height: 600px) {
+
+#header.open{
+	height: 100%;
+}
+
+}
+
+
+@media all and (max-width: 1440px) and (max-height: 740px) {
+
+#header.open{
+	height: 100%;
+}
+
+}
+
+
+#ie-warning{
+	position: relative; 
+	top: 0%;
+	 left: 00%; 
+	 width : 100%; 
+	 height: auto; 
+	 background-color: white; 
+	 z-index: 9999;
+	 border-bottom: 2px solid gray;
+	 
+}
+
+#ie-close .icon:before{
+	font-size: 27px;
+	line-height: 27px;
+}
+
+.ie-warning-container{
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+/* CHANGES BY GREG NEMES MAY 2016 */
+
+#header #nav-toggle{
+	margin-top: -1px;
+	font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;	
+}
+
+#header #nav-toggle:hover{
+	text-decoration: none;
+}
+
+#header a:focus{
+	text-decoration: none;
+}
+
+.page-id-1130 #awards-nav-item{
+	font-family: "DINNextLTPro-Bold","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+}
+
+.icon-instagram:before{
+	content: '';
+	width: 13px;
+	height: 13px;
+	position: relative;
+	top: 2px;
+	background-image: url('http://myk-d.com/wp-content/themes/mikyoung/_/img/instagram.png');
+	background-size: contain;
+	background-repeat: none;
+}
+
+

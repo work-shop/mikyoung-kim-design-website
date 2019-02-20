@@ -1,0 +1,128 @@
+
+
+
+.modal-mk{
+	position: fixed;
+	left: -100vw;
+	height: auto;
+	bottom: 0vh;
+	z-index: 9;
+	transition: opacity .25s;
+	opacity: 0;
+	width: 100vw;
+
+	@media screen and (max-width: $sm) {
+		//width: 80vw;
+	}
+
+	&.on{
+		transition: opacity .25s;
+		opacity: 1;
+		left: 0vw;
+
+		@media screen and (max-width: $sm) {
+			height: 60vh;
+			top: 20vh;
+			bottom: auto;
+			width: 80vw;
+			left: 10vw;
+			overflow: scroll;
+
+		}
+	}
+
+	&.scroll{
+		.modal-body{
+			overflow: scroll;
+		}
+	}
+}
+
+
+.modal-body{
+	border: 1px solid #ddd;
+	background: white;
+	padding: 40px;
+	padding-top: 30px;
+	height: auto;
+	position: relative;
+
+	p{
+		font-size: .95em;
+
+		@media screen and (max-width: $sm) {
+			font-size: 13px;
+		}
+	}
+
+	@media screen and (max-width: $sm) {
+		padding: 10px;
+		overflow: scroll;
+
+		.container{
+			padding: 0;
+		}
+	}
+}
+
+.modal-close-button{
+	float: right;
+
+	.icon:before{
+		font-size: 50px;
+		line-height: 42px;
+		color: white;
+	}
+
+	@media screen and (max-width: $sm) {
+		display: none;
+	}
+}
+
+#mobile-modal-close{
+	display: none;
+	position: fixed;
+	top: 10px;
+	right: 14px;	
+	z-index: 10;
+
+	.icon:before{
+		font-size: 36px;
+		line-height: 36px;
+		color: white;
+	}	
+}
+
+
+.modal-blanket{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	left: -100vw;
+	opacity: 0;
+	background: rgba(255,255,255,.66);
+}
+
+
+//body styles
+.modal-on{
+	overflow: hidden;
+
+	#modal-close{
+		transform: translate(0%, 0%);
+	}
+
+	.modal-blanket{
+		left: 0;
+		opacity: 1;
+	}
+
+	#mobile-modal-close{
+		@media screen and (max-width: $sm) {
+			display: block;
+		}		
+	}
+
+}
