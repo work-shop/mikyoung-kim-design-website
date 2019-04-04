@@ -5,12 +5,12 @@
 		<ul id="options" data-option-key="filter">
 			<li class="sort">Filter By:</li>
 			<li class="filter selected" data-option-value="*"><a href="#filter">all</a></li>
-			<li class="filter" data-option-value=".civic-institutional"><a href="#filter">civic + institutional</a></li>
-			<li class="filter" data-option-value=".plaza-2"><a href="#filter">plaza</a></li>                        
-			<li class="filter" data-option-value=".garden-2"><a href="#filter">garden</a></li>                        
-			<li class="filter" data-option-value=".art-environments"><a href="#filter">environmental art</a></li>
+			<li class="filter" data-option-value=".civic-institutional"><a href="#filter"><?php $category_id = 8; $category = get_the_category_by_ID($category_id); echo $category; ?></a></li>
+			<li class="filter" data-option-value=".plaza-2"><a href="#filter"><?php $category_id = 40; $category = get_the_category_by_ID($category_id); echo $category; ?></a></li>                        
+			<li class="filter" data-option-value=".garden-2"><a href="#filter"><?php $category_id = 41; $category = get_the_category_by_ID($category_id); echo $category; ?></a></li>                        
+			<li class="filter" data-option-value=".art-environments"><a href="#filter"><?php $category_id = 4; $category = get_the_category_by_ID($category_id); echo $category; ?></a></li>
 			<li class="filter hidden" data-option-value=".healing-healthcare"><a href="#filter">healing + healthcare</a></li>
-			<li class="filter" data-option-value=".urban-masterplan"><a href="#filter">masterplan</a></li>
+			<li class="filter" data-option-value=".urban-masterplan"><a href="#filter"><?php $category_id = 6; $category = get_the_category_by_ID($category_id); echo $category; ?></a></li>
 			<li class="nav-toggle-projects exclude" ><a href="#">project index</a></li> 
 			<li class="nav-toggle-social hidden"><?php get_template_part( 'social_icons'); ?></li>           
 		</ul>

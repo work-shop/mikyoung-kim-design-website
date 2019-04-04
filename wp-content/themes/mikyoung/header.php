@@ -62,6 +62,10 @@
 	
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/MyFontsWebfontsKit.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/pictograms.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/entypo.css">
+ 
 	<!-- Removed lt ie 9 conditions here, 12-15-17 greg nemes -->
 
   <?php wp_head(); ?>

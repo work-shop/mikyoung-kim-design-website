@@ -28,7 +28,7 @@
 					</a>
 				</li>
 				<li class="social-item">
-					<a href="https://www.facebook.com/mikyoungkimdesign" class="small social-link" target="_blank">							
+					<a href="https://www.facebook.com/mikyoungkimdesign" class="small social-link" target="_blank">		
 						<span class="icon-facebook social icon-left" data-icon="&#62220;"></span> 
 					</a>
 					<a href="https://twitter.com/MikyoungKimDsgn" class="small social-link" target="_blank">	
@@ -60,7 +60,11 @@
 			);
 			$nav_query = new WP_Query( $args );
 			if ( $nav_query->have_posts() ) { ?>
-			<h3 class="reg"><a href="/work">civic + institutional</a></h3>
+				<?php 
+				$category_id = 8;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+			<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
 			<ul>
 				<?php while ( $nav_query->have_posts() ) {
 					$nav_query->the_post(); ?>
@@ -84,7 +88,11 @@
 				);
 				$nav_query = new WP_Query( $args );
 				if ( $nav_query->have_posts() ) { ?>
-				<h3 class="reg"><a href="/work">plaza</a></h3>
+				<?php 
+				$category_id = 40;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+			<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
 				<ul>
 					<?php while ( $nav_query->have_posts() ) {
 						$nav_query->the_post(); ?>
@@ -108,7 +116,11 @@
 					);
 					$nav_query = new WP_Query( $args );
 					if ( $nav_query->have_posts() ) { ?>
-					<h3 class="reg"><a href="/work">garden</a></h3>
+						<?php 
+						$category_id = 41;
+						$category = get_the_category_by_ID($category_id); 
+						?>
+					<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
 					<ul>
 						<?php while ( $nav_query->have_posts() ) {
 							$nav_query->the_post(); ?>
@@ -132,7 +144,11 @@
 						);
 						$nav_query = new WP_Query( $args );
 						if ( $nav_query->have_posts() ) { ?>
-						<h3 class="reg"><a href="/work">environmental art</a></h3>
+							<?php 
+							$category_id = 4;
+							$category = get_the_category_by_ID($category_id); 
+							?>
+						<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
 						<ul>
 							<?php while ( $nav_query->have_posts() ) {
 								$nav_query->the_post(); ?>
@@ -180,7 +196,11 @@
 								);
 								$nav_query = new WP_Query( $args );
 								if ( $nav_query->have_posts() ) { ?>
-								<h3 class="reg"><a href="/work">masterplan</a></h3>
+									<?php 
+									$category_id = 6;
+									$category = get_the_category_by_ID($category_id); 
+									?>
+								<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
 								<ul>
 									<?php while ( $nav_query->have_posts() ) {
 										$nav_query->the_post(); ?>
