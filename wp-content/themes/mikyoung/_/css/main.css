@@ -807,3 +807,13 @@ video.wp-video-shortcode {
     .home-news-story:nth-child(2) {
       padding-left: 0px;
       padding-right: 0px; } }
+
+#footer-social .social-link span:before {
+  margin-top: 23px; }
+  @media screen and (max-width: 767px) {
+    #footer-social .social-link span:before {
+      margin-top: 32px; } }
+
+@media screen and (max-width: 767px) {
+  #footer #footer-right {
+    float: right !important; } }

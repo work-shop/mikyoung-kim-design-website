@@ -305,11 +305,11 @@ function view(){
 	} 
 	
 	if($(window).scrollTop() >= ch2 && $(this).scrollTop() >= 60 && !$("#header").hasClass('tucked')){
-		$("#header").addClass('tucked');
+		//$("#header").addClass('tucked');
 		$("#filters").addClass('tucked');					
 	} 
 	else if($(window).scrollTop() < (ch2-60) && $("#header").hasClass('tucked')){
-		$("#header").removeClass('tucked');
+		//$("#header").removeClass('tucked');
 		$("#filters").removeClass('tucked');	
 	}  
 	

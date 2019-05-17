@@ -1,0 +1,22 @@
+
+
+//social icons at top of footer
+
+#footer-social{
+	.social-link span:before{
+		margin-top: 23px;
+
+		@media screen and (max-width: $sm) {
+			margin-top: 32px;
+		}
+	}
+}
+
+
+#footer{
+	#footer-right{
+		@media screen and (max-width: $sm) {
+			float: right !important;
+		}
+	}
+}
