@@ -128,7 +128,7 @@
 								}
 								else { } ?>
 								<p class="project-title">
-									<?php the_title(); ?> - <?php the_field('project_location'); ?>
+									<?php the_title(); ?>
 								</p>						
 							</a>
 						</li>
@@ -161,7 +161,7 @@
 								<img src="<?php bloginfo('template_directory'); ?>/_/img/blank-small.jpg">											
 								<?php } ?>
 								<p class="project-title">
-									<?php the_title(); ?> - <?php the_field('project_location'); ?>
+									<?php the_title(); ?>
 								</p>						
 							</a>
 						</li>                    

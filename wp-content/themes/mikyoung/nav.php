@@ -11,7 +11,7 @@
 		$category_id = 89;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>
@@ -39,7 +39,7 @@
 		$category_id = 5;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>
@@ -67,7 +67,7 @@
 		$category_id = 8;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>
@@ -95,7 +95,7 @@
 		$category_id = 90;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>
@@ -123,7 +123,7 @@
 		$category_id = 4;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>
@@ -151,7 +151,7 @@
 		$category_id = 6;
 		$category = get_the_category_by_ID($category_id); 
 		?>
-		<h3 class="reg"><a href="/work"><?php echo $category; ?></a></h3>
+		<h3 class="reg"><?php echo $category; ?></h3>
 		<ul>
 			<?php while ( $nav_query->have_posts() ) {
 				$nav_query->the_post(); ?>

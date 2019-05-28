@@ -171,7 +171,7 @@
 											}
 											else { } ?>
 												<p class="project-title">
-													<?php the_title(); ?> - <?php the_field('project_location'); ?>
+													<?php the_title(); ?>
 												</p>						
 											</a>
 										</li>

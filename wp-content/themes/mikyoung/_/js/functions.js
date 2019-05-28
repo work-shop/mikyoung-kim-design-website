@@ -304,12 +304,12 @@ function view(){
 		$("body").addClass('before');		 		 		
 	} 
 	
-	if($(window).scrollTop() >= ch2 && $(this).scrollTop() >= 60 && !$("#header").hasClass('tucked')){
-		//$("#header").addClass('tucked');
+	if($(window).scrollTop() >= ch2 && $(this).scrollTop() >= 60 && !$("body").hasClass('tucked')){
+		$("body").addClass('tucked');
 		$("#filters").addClass('tucked');					
 	} 
-	else if($(window).scrollTop() < (ch2-60) && $("#header").hasClass('tucked')){
-		//$("#header").removeClass('tucked');
+	else if($(window).scrollTop() < (ch2-60) && $("body").hasClass('tucked')){
+		$("body").removeClass('tucked');
 		$("#filters").removeClass('tucked');	
 	}  
 	
