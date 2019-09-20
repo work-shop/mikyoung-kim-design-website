@@ -80,7 +80,7 @@
 		<div class="container">
 			<div class="row header-top">
 				<a id="logo" class="logo left" href="<?php bloginfo('url'); ?>">
-					<img src="<?php bloginfo('template_directory'); ?>/_/img/logo2.png" alt="logo">
+					<img src="<?php bloginfo('template_directory'); ?>/_/img/logo2.svg" alt="logo">
 				</a>
 				<div class="nav-main right">
 					<a href="<?php bloginfo('url'); ?>/work" id="work-nav-item" class="nav-main-link">work</a>

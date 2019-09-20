@@ -201,6 +201,26 @@ p.news-date{
 		}
 	}
 
+	@media screen and (max-width: $sm) {
+		.nav-col-category{
+			display: none;
+		}
+	}
+
+	.nav-col-firm{
+		display: none;
+		@media screen and (max-width: $sm) {
+			display: block;
+		}
+
+		li {
+			margin-bottom: 1.3em;
+			a{
+				font-size: 18px;
+			}
+		}
+	}
+
 }
 
 
@@ -762,5 +782,16 @@ html[xmlns] .flexslider-project .slides {
 .block#about-home .flex-caption{
 	top: 0;
 } 
+
+#logo{
+
+	img{
+		margin-top: 24px;
+
+		@media screen and (max-width: $sm) {
+			margin-top: 18px;
+		}
+	}
+}
 
 

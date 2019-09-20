@@ -19,4 +19,25 @@
 			float: right !important;
 		}
 	}
+
+	.nav-col-firm{
+		display: none;
+
+		.social-item{
+			display: none;
+		}
+
+		@media screen and (max-width: $sm) {
+			display: block;
+			margin-top: 2em;
+
+			li {
+				margin-bottom: .75em;
+				padding-left: 0;
+				a{
+					font-size: 17px;	
+				}
+			}
+		}
+	}
 }

@@ -1,4 +1,55 @@
-<div class="col-sm-2">
+		<div class="col-sm-2 nav-col-firm" >
+			<ul>					
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/work" class="small">							
+						work				
+					</a>
+				</li>	
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/news" class="small">							
+						news				
+					</a>
+				</li>				
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/about" class="small">							
+						about				
+					</a>
+				</li>	
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/awards" class="small">							
+						awards				
+					</a>
+				</li>
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/about#about_contact" class="small">							
+						contact				
+					</a>
+				</li>
+				<li class="social-item hidden">
+					<a href="https://www.facebook.com/mikyoungkimdesign" class="small social-link" target="_blank">		
+						<span class="icon-facebook social icon-left" data-icon="&#62220;"></span> 
+					</a>
+					<a href="https://twitter.com/MikyoungKimDsgn" class="small social-link" target="_blank">	
+						<span class="icon-twitter social icon-left" data-icon="&#62217;"></span> 											
+					</a>
+					<a href="https://www.linkedin.com/company/mikyoung-kim-design" class="small social-link social-link-linkedin" target="_blank">	
+						<span class="icon-linkedin social icon-left" data-icon="&#62232;"></span> 															
+					</a>
+					<br>
+					<a href="https://instagram.com/mikyoungkimdesign" class="small social-link" target="_blank">	
+						<span class="icon-instagram social icon-left" data-icon=""></span> 															
+					</a>					
+					<a href="https://vimeo.com/user11371297" class="small social-link" target="_blank">		
+						<span class="icon-vimeo social icon-left" data-icon="&#62214;"></span> 																		
+					</a>
+					<a href="http://www.pinterest.com/mykd/" class="small social-link" target="_blank">	
+						<span class="icon-pinterest social icon-left" data-icon="&#62226;"></span> 																		
+					</a>
+				</li>										
+			</ul>
+		</div>	
+
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
@@ -26,7 +77,7 @@
 	wp_reset_postdata(); ?>				
 </div>	
 
-<div class="col-sm-2">
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
@@ -54,7 +105,7 @@
 	wp_reset_postdata(); ?>				
 </div>
 
-<div class="col-sm-2">
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
@@ -82,7 +133,7 @@
 	wp_reset_postdata(); ?>				
 </div>
 
-<div class="col-sm-2">
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
@@ -110,7 +161,7 @@
 	wp_reset_postdata(); ?>				
 </div>
 
-<div class="col-sm-2">
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
@@ -138,7 +189,7 @@
 	wp_reset_postdata(); ?>				
 </div>
 
-<div class="col-sm-2">
+<div class="col-sm-2 nav-col-category">
 	<?php 
 	$args = array(
 		'post_type' => 'project',
