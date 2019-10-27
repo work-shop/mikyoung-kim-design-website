@@ -4,22 +4,27 @@
 					<a href="<?php bloginfo('url'); ?>/work" class="small">							
 						work				
 					</a>
-				</li>	
-				<li class="">
-					<a href="<?php bloginfo('url'); ?>/news" class="small">							
-						news				
-					</a>
-				</li>				
+				</li>
 				<li class="">
 					<a href="<?php bloginfo('url'); ?>/about" class="small">							
 						about				
 					</a>
-				</li>	
+				</li>		
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/process" class="small">							
+						process				
+					</a>
+				</li>		
 				<li class="">
 					<a href="<?php bloginfo('url'); ?>/awards" class="small">							
 						awards				
 					</a>
 				</li>
+				<li class="">
+					<a href="<?php bloginfo('url'); ?>/news" class="small">							
+						news				
+					</a>
+				</li>	
 				<li class="">
 					<a href="<?php bloginfo('url'); ?>/about#about_contact" class="small">							
 						contact				
@@ -49,171 +54,171 @@
 			</ul>
 		</div>	
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'learning',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 89;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>	
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'learning',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 89;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>	
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'health-wellness',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 5;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'health-wellness',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 5;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'civic-institutional',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 8;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'civic-institutional',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 8;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'mixed-use',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 90;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'mixed-use',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 90;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'art-environments',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 4;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'art-environments',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 4;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>
 
-<div class="col-sm-2 nav-col-category">
-	<?php 
-	$args = array(
-		'post_type' => 'project',
-		'project_category' => 'urban-masterplan',
-		'posts_per_page' => '-1'
-	);
-	$nav_query = new WP_Query( $args );
-	if ( $nav_query->have_posts() || true ) { ?>
-		<?php 
-		$category_id = 6;
-		$category = get_the_category_by_ID($category_id); 
-		?>
-		<h3 class="reg"><?php echo $category; ?></h3>
-		<ul>
-			<?php while ( $nav_query->have_posts() ) {
-				$nav_query->the_post(); ?>
-				<li class="">
-					<a href="<?php the_permalink(); ?>" class="small">							
-						<?php the_title(); ?>				
-					</a>
-				</li>
-			<?php } ?>
-		</ul>
-	<?php } else { }
-	wp_reset_postdata(); ?>				
-</div>
+		<div class="col-sm-2 nav-col-category">
+			<?php 
+			$args = array(
+				'post_type' => 'project',
+				'project_category' => 'urban-masterplan',
+				'posts_per_page' => '-1'
+			);
+			$nav_query = new WP_Query( $args );
+			if ( $nav_query->have_posts() || true ) { ?>
+				<?php 
+				$category_id = 6;
+				$category = get_the_category_by_ID($category_id); 
+				?>
+				<h3 class="reg"><?php echo $category; ?></h3>
+				<ul>
+					<?php while ( $nav_query->have_posts() ) {
+						$nav_query->the_post(); ?>
+						<li class="">
+							<a href="<?php the_permalink(); ?>" class="small">							
+								<?php the_title(); ?>				
+							</a>
+						</li>
+					<?php } ?>
+				</ul>
+			<?php } else { }
+			wp_reset_postdata(); ?>				
+		</div>
 
