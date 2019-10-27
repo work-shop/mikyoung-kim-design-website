@@ -1,0 +1,46 @@
+
+.page-id-3943{
+	#process-nav-item{
+		font-family: "DINNextLTPro-Bold","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+	}
+}
+
+
+#process{
+	padding-top: 90px;
+	columns: 3;
+	column-gap: 30px;
+
+	@media screen and (max-width: 992px) {
+		columns: 2;
+	}
+
+	@media screen and (max-width: 568px) {
+		columns: 1;
+	}
+}
+
+.process-story{
+	display: inline-block;
+	margin-bottom: 5em; 
+
+	.process-story-image{
+		margin-bottom: 0;
+		display: block;
+	}
+
+	.process-story-heading{
+		font-family: "DINNextLTPro-Bold","Helvetica Neue",Helvetica,Arial,sans-serif!important;
+		//text-transform: uppercase;
+		margin-top: 20px;
+		color: #444;
+		//letter-spacing: .03em;
+		//font-size: 15px;
+	}
+
+	.process-story-text{
+		font-size: 20px;
+		line-height: 1.5;
+		font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+	}
+}

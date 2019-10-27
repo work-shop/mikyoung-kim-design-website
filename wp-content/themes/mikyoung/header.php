@@ -7,7 +7,7 @@
 	<meta charset="<?php bloginfo('charset'); ?>">
 	
 	<?php if (is_search()) { ?>
-	<meta name="robots" content="noindex, nofollow" /> 
+		<meta name="robots" content="noindex, nofollow" /> 
 	<?php } ?>
 
 	<title> 
@@ -33,7 +33,7 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<!-- moved this css file to /themes/mikyoung/_/css/main.scss -->
-	 	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->	
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->	
 
 	<link rel="icon" type="image/x-icon" href="<?php bloginfo('template_directory'); ?>/_/img/favicon.ico" />
 	<link rel="apple-touch-icon-precomposed" href="<?php bloginfo('template_directory'); ?>/_/img/favicon-152.png">
@@ -65,44 +65,46 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/MyFontsWebfontsKit.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/pictograms.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/_/fonts/entypo.css">
- 
+
 	<!-- Removed lt ie 9 conditions here, 12-15-17 greg nemes -->
 
-  <?php wp_head(); ?>
+	<?php wp_head(); ?>
 
 </head>
 
 <body <?php body_class('before header-closed modal-off'); ?>>
 
-<header id="header" class="closed  <?php if (is_home()) { echo 'loading-mykd'; } else{ } ?>">
+	<header id="header" class="closed  <?php if (is_home()) { echo 'loading-mykd'; } else{ } ?>">
 
-	<div class="header-top-wrapper">
-		<div class="container">
-			<div class="row header-top">
-				<a id="logo" class="logo left" href="<?php bloginfo('url'); ?>">
-					<img src="<?php bloginfo('template_directory'); ?>/_/img/logo2.svg" alt="logo">
-				</a>
-				<div class="nav-main right">
-					<a href="<?php bloginfo('url'); ?>/work" id="work-nav-item" class="nav-main-link">work</a>
-					<a href="<?php bloginfo('url'); ?>/news" id="blog-nav-item" class="nav-main-link">news</a>
-					<a href="<?php bloginfo('url'); ?>/about" id="about-nav-item" class="nav-main-link">firm</a>
-					<a href="<?php bloginfo('url'); ?>/awards" id="awards-nav-item" class="nav-main-link">awards</a>
-					<a id="nav-toggle" href="#" class="right nav-toggle">index</a>
-				</div>	
-				<a id="nav-close" href="#" class="nav-toggle"><span class="icon" data-icon="’"></span></a>
+		<div class="header-top-wrapper">
+			<div class="container">
+				<div class="row header-top">
+					<a id="logo" class="logo left" href="<?php bloginfo('url'); ?>">
+						<?php get_template_part('logo'); ?>
+						<!-- <img src="<?php bloginfo('template_directory'); ?>/_/img/logo2.svg" alt="logo"> -->
+					</a>
+					<div class="nav-main right">
+						<a href="<?php bloginfo('url'); ?>/work" id="work-nav-item" class="nav-main-link">work</a>
+						<a href="<?php bloginfo('url'); ?>/about" id="about-nav-item" class="nav-main-link">about</a>
+						<a href="<?php bloginfo('url'); ?>/process" id="process-nav-item" class="nav-main-link">process</a>
+						<a href="<?php bloginfo('url'); ?>/awards" id="awards-nav-item" class="nav-main-link">awards</a>
+						<a href="<?php bloginfo('url'); ?>/news" id="blog-nav-item" class="nav-main-link">news</a>
+						<a id="nav-toggle" href="#" class="right nav-toggle">index</a>
+					</div>	
+					<a id="nav-close" href="#" class="nav-toggle"><span class="icon" data-icon="’"></span></a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<div class="header-nav-wrapper">
-		<div class="container">
-			<nav class="row header-nav">
-				<div id="blanket"></div>
-				<?php get_template_part('nav'); ?>			
-			</nav>
+		<div class="header-nav-wrapper">
+			<div class="container">
+				<nav class="row header-nav">
+					<div id="blanket"></div>
+					<?php get_template_part('nav'); ?>			
+				</nav>
+			</div>
 		</div>
-	</div>
 
-</header>
+	</header>
 
-<div id="content" class="loading-mykd">
+	<div id="content" class="loading-mykd">

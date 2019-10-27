@@ -125,6 +125,12 @@ p.news-date{
 #header.open, .home.after #header.open{
 	background: transparentize(white, .05);
 
+	#logo{
+		svg path{
+			fill: $dark !important;
+		}
+	}
+
 	.header-top-wrapper{
 		background: white;
 	}
@@ -152,6 +158,14 @@ p.news-date{
 
 #header{
 
+	#logo{
+		padding-top: 25px;
+
+		@media screen and (max-width: $sm) {
+			padding-top: 17px;
+		}
+	}
+
 	#nav-toggle {
 		display: block;
 		margin-top: 0;
@@ -159,6 +173,8 @@ p.news-date{
 		float: right;
 		text-align: right;
 		font-size: 22px;
+		font-family: "DINNextLTPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 
 		&:hover{
 			color: $dark;
@@ -181,6 +197,7 @@ p.news-date{
 	}
 
 	.nav-main-link{
+		font-family: "DINNextLTPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 		@media screen and (max-width: $sm) {
 			display: none;
 		}
