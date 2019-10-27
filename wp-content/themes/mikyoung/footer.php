@@ -80,10 +80,6 @@ twq('track','PageView');
 </script>
 <!-- End Twitter universal website tag code -->
 
-<!-- Start of HubSpot Embed Code -->
-<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/4488136.js"></script>
-<!-- End of HubSpot Embed Code -->
-
 </body>
 
 </html>

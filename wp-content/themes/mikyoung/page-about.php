@@ -129,8 +129,8 @@ Template Name: About
 													Click for Bio
 												</a>
 											</div>
-											<?php endif; ?>
 											<?php $team_count = $team_count + 1; ?>
+											<?php endif; ?>
 										<?php endwhile; ?>
 										<?php $team_count = 1; ?>
 									<?php while( have_rows('team','option') ): the_row(); ?>
@@ -140,7 +140,7 @@ Template Name: About
 										$name = get_sub_field('name');
 										$title = get_sub_field('title');
 										$active = get_sub_field('active'); ?>
-										<?php if( $active ): ?>
+										<?php if( $active && $bio ): ?>
 											<div class="modal-mk modal-person off" id="modal-person-<?php echo $team_count; ?>">
 												<div class="modal-body">
 													<div class="container">
@@ -157,8 +157,8 @@ Template Name: About
 													</div>
 												</div>
 											</div>
-											<?php endif; ?>
 											<?php $team_count = $team_count + 1; ?>
+											<?php endif; ?>
 										<?php endwhile; ?>
 									<?php endif; ?>
 								</div>

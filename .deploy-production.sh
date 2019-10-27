@@ -2,7 +2,6 @@
 
 source ./.env
 
-
 # Theme
 scp -P $KINSTA_PRODUCTION_PORT -r ./wp-content/themes/mikyoung $KINSTA_PRODUCTION_USER@$KINSTA_PRODUCTION_IP:./public/wp-content/themes
 
@@ -19,4 +18,4 @@ scp -P $KINSTA_PRODUCTION_PORT -r ./wp-content/themes/mikyoung $KINSTA_PRODUCTIO
 #functions.php
 #scp -P $KINSTA_PRODUCTION_PORT ./wp-content/themes/custom/functions.php $KINSTA_PRODUCTION_USER@$KINSTA_PRODUCTION_IP:./public/wp-content/themes/custom/
 
-curl -L https://PRODUCTION.newportartmuseum.org/kinsta-clear-cache-all/ 
+curl -L https://myk-d.com/kinsta-clear-cache-all/ 

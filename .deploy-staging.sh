@@ -19,4 +19,4 @@ scp -P $KINSTA_STAGING_PORT -r ./wp-content/themes/mikyoung $KINSTA_STAGING_USER
 #functions.php
 #scp -P $KINSTA_STAGING_PORT ./wp-content/themes/custom/functions.php $KINSTA_STAGING_USER@$KINSTA_STAGING_IP:./public/wp-content/themes/custom/
 
-curl -L https://staging.newportartmuseum.org/kinsta-clear-cache-all/ 
+curl -L https://staging.myk-d.com/kinsta-clear-cache-all/ 

@@ -1,0 +1,21 @@
+ {
+  "name": "mikyoung",
+  "version": "3.0.0",
+  "description": "Mikyoung Kim Design",
+  "author": "Work-Shop (http://workshop.co)",
+  "license": "ISC",
+  "paths": {
+    "src": "./wp-content/themes/mikyoung",
+    "dest": "./wp-content/themes/mikyoung"
+  },
+  "repository": {
+  },
+  "bugs": {
+  },
+  "scripts": {
+    "deploy-staging": "./.deploy-staging.sh",
+    "deploy-production": "./.deploy-production.sh"
+  },
+  "devDependencies": {},
+  "dependencies": {}
+}
