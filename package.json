@@ -1,21 +1,18 @@
- {
+{
   "name": "mikyoung",
-  "version": "3.0.0",
-  "description": "Mikyoung Kim Design",
-  "author": "Work-Shop (http://workshop.co)",
-  "license": "ISC",
-  "paths": {
-    "src": "./wp-content/themes/mikyoung",
-    "dest": "./wp-content/themes/mikyoung"
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-watch": "^1.1.0"
   },
-  "repository": {
-  },
-  "bugs": {
+  "devDependencies": {
+    "grunt-sass": "^2.1.0"
   },
   "scripts": {
-    "deploy-staging": "./.deploy-staging.sh",
-    "deploy-production": "./.deploy-production.sh"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {},
-  "dependencies": {}
+  "author": "",
+  "license": "ISC"
 }

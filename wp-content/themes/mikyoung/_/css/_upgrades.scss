@@ -696,54 +696,7 @@ html[xmlns] .flexslider-project .slides {
 
 .flexslider-full{
 
-	.flex-caption{
-		left: auto;
-		right: 0;
-		bottom: 27%;
-		margin: 0;
-		transform: translateY(50%);
 
-		@media screen and (max-width: 768px) {
-			bottom: 35%;
-		}
-
-		p{
-			font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-			background: transparentize(black, .4);
-			color: #eee;
-			width: 39%;
-			margin: 0;
-			line-height: 1.1;
-			text-align: left;
-			padding: 20px 30px;
-			border-radius: 0px 3px 3px 0px;
-			font-size: 2.2vw;
-
-			&.righted{
-				float: right;
-				text-align: right;
-				border-radius: 3px 0px 0px 3px;
-			}
-
-			@media screen and (max-width: 1024px) {
-				font-size: 2.7vw;
-			}
-			@media screen and (max-width: 768px) {
-				padding: 15px;
-				font-size: 3.5vw;
-			}
-			@media screen and (max-width: 568px) {
-				font-size: 4.25vw;
-				width: 50%;
-			}
-
-			@media screen and (max-height: 415px) {
-				font-size: 2.7vw;
-				width: 45%;
-			}
-		}
-
-	}
 
 }
 

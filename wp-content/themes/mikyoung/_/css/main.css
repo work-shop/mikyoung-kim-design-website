@@ -490,46 +490,6 @@ html[xmlns] .flexslider-project .slides {
 .single .share-post .addthis_button_facebook {
   margin-right: 0; }
 
-.flexslider-full .flex-caption {
-  left: auto;
-  right: 0;
-  bottom: 27%;
-  margin: 0;
-  transform: translateY(50%); }
-  @media screen and (max-width: 768px) {
-    .flexslider-full .flex-caption {
-      bottom: 35%; } }
-  .flexslider-full .flex-caption p {
-    font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
-    background: rgba(0, 0, 0, 0.6);
-    color: #eee;
-    width: 39%;
-    margin: 0;
-    line-height: 1.1;
-    text-align: left;
-    padding: 20px 30px;
-    border-radius: 0px 3px 3px 0px;
-    font-size: 2.2vw; }
-    .flexslider-full .flex-caption p.righted {
-      float: right;
-      text-align: right;
-      border-radius: 3px 0px 0px 3px; }
-    @media screen and (max-width: 1024px) {
-      .flexslider-full .flex-caption p {
-        font-size: 2.7vw; } }
-    @media screen and (max-width: 768px) {
-      .flexslider-full .flex-caption p {
-        padding: 15px;
-        font-size: 3.5vw; } }
-    @media screen and (max-width: 568px) {
-      .flexslider-full .flex-caption p {
-        font-size: 4.25vw;
-        width: 50%; } }
-    @media screen and (max-height: 415px) {
-      .flexslider-full .flex-caption p {
-        font-size: 2.7vw;
-        width: 45%; } }
-
 .single-post .post-content b, .single-post .post-content strong, .single-post .post-content h1, .single-post .post-content h2, .single-post .post-content h3, .single-post .post-content h4, .single-post .post-content h5, .single-post .post-content h6 {
   font-family: "DINNextLTPro-Bold","Helvetica Neue",Helvetica,Arial,sans-serif; }
 
@@ -845,7 +805,7 @@ video.wp-video-shortcode {
 #process {
   padding-top: 90px;
   columns: 3;
-  column-gap: 30px; }
+  column-gap: 50px; }
   @media screen and (max-width: 992px) {
     #process {
       columns: 2; } }
@@ -855,18 +815,31 @@ video.wp-video-shortcode {
 
 .process-story {
   display: inline-block;
-  margin-bottom: 5em; }
+  margin-bottom: 3.5em; }
   .process-story .process-story-image {
     margin-bottom: 0;
-    display: block; }
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 11px; }
   .process-story .process-story-heading {
     font-family: "DINNextLTPro-Bold", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    margin-top: 20px;
-    color: #444; }
+    margin-bottom: 0;
+    color: #444;
+    padding: 0 12px; }
   .process-story .process-story-text {
-    font-size: 20px;
-    line-height: 1.5;
-    font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif; }
+    margin-top: 5px;
+    font-size: 19px;
+    line-height: 1.35;
+    font-family: "DINNextLTPro-Light","Helvetica Neue",Helvetica,Arial,sans-serif;
+    padding: 0 12px; }
+    .process-story .process-story-text:after {
+      content: '';
+      display: none;
+      width: 100%;
+      height: 1px;
+      background: #eee;
+      margin-top: 1em; }
 
 .home #header {
   background: none; }
@@ -884,6 +857,41 @@ video.wp-video-shortcode {
     transition: none;
     color: #333; }
 
+.home .flex-caption {
+  left: 130px;
+  right: 0;
+  bottom: 130px;
+  margin: 0; }
+  @media screen and (max-width: 768px) {
+    .home .flex-caption {
+      bottom: 100px;
+      left: 100px; } }
+  @media screen and (max-width: 568px) {
+    .home .flex-caption {
+      left: 15px; } }
+  .home .flex-caption p {
+    text-shadow: 1px 3px 25px black;
+    font-family: "DINNextLTPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+    color: #fff;
+    width: 39%;
+    margin: 0;
+    line-height: 1.1;
+    text-align: left;
+    font-size: 2.3vw;
+    background: none;
+    padding: none; }
+    .home .flex-caption p.righted {
+      float: right;
+      text-align: right;
+      border-radius: 3px 0px 0px 3px; }
+    @media screen and (max-width: 1024px) {
+      .home .flex-caption p {
+        font-size: 2.8vw; } }
+    @media screen and (max-width: 568px) {
+      .home .flex-caption p {
+        font-size: 4.0vw;
+        width: 90%; } }
+
 #home:before {
   position: absolute;
   content: '';
@@ -895,17 +903,52 @@ video.wp-video-shortcode {
   box-shadow: 0px 100px 100px rgba(0, 0, 0, 0.65);
   z-index: 3; }
 
-#home .flexslider-full-direction .icon:before {
-  font-size: 100px;
-  text-shadow: -2px -3px 20px black; }
+#home .flexslider-full-direction {
+  height: 100%;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 150px;
+  margin: 0; }
+  @media screen and (max-width: 991px) {
+    #home .flexslider-full-direction {
+      width: 100px; } }
+  @media screen and (max-width: 767px) {
+    #home .flexslider-full-direction {
+      width: 60px; } }
+  #home .flexslider-full-direction.flex-next {
+    justify-content: start; }
+  #home .flexslider-full-direction:hover .icon:before {
+    transition: opacity .12s;
+    opacity: 1; }
+  #home .flexslider-full-direction .icon {
+    width: 100%; }
+  #home .flexslider-full-direction .icon:before {
+    opacity: .3;
+    transition: opacity .12s;
+    display: block;
+    text-align: center;
+    position: static;
+    font-size: 90px;
+    width: 100%;
+    text-shadow: -2px -3px 20px black; }
+    @media screen and (max-width: 767px) {
+      #home .flexslider-full-direction .icon:before {
+        opacity: 1; } }
 
 #home .section-footer {
   background: none;
   height: 75px; }
+  @media screen and (max-width: 767px) {
+    #home .section-footer {
+      height: 60px; } }
   #home .section-footer a .icon:before {
     color: white;
     text-shadow: 0px -3px 20px black;
     font-size: 90px !important; }
+    @media screen and (max-width: 767px) {
+      #home .section-footer a .icon:before {
+        font-size: 70px !important; } }
 
 #footer-social .social-link span:before {
   margin-top: 23px; }

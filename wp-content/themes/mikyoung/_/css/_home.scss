@@ -35,6 +35,55 @@
 		}
 	}
 
+	.flex-caption{
+		left: 130px;
+		right: 0;
+		bottom: 130px;
+		margin: 0;
+
+		@media screen and (max-width: 768px) {
+			bottom: 100px;
+			left: 100px;
+		}
+
+		@media screen and (max-width: 568px) {
+			left: 15px;
+		}
+
+		p{
+			text-shadow: 1px 3px 25px black;
+			font-family: "DINNextLTPro-Regular","Helvetica Neue",Helvetica,Arial,sans-serif !important;
+			color: #fff;
+			width: 39%;
+			margin: 0;
+			line-height: 1.1;
+			text-align: left;
+			font-size: 2.3vw;
+			background: none;
+			padding: none;
+
+			&.righted{
+				float: right;
+				text-align: right;
+				border-radius: 3px 0px 0px 3px;
+			}
+
+			@media screen and (max-width: 1024px) {
+				font-size: 2.8vw;
+			}
+			@media screen and (max-width: 768px) {
+				//padding: 15px;
+				//font-size: 3.7vw;
+			}
+			@media screen and (max-width: 568px) {
+				font-size: 4.0vw;
+				width: 90%;
+			}
+
+		}
+
+	}
+
 
 }
 
@@ -52,9 +101,51 @@
 		z-index: 3;
 	}
 
-	.flexslider-full-direction .icon:before{
-		font-size: 100px;
-		text-shadow: -2px -3px 20px black;
+	.flexslider-full-direction{
+		height: 100%;
+		top: 0;
+		display: flex;
+		align-items: center;
+		width: 150px;
+		margin: 0;
+
+		@media screen and (max-width: $md) {
+			width: 100px;
+		}
+
+		@media screen and (max-width: $sm) {
+			width: 60px;
+		}
+
+		&.flex-next{
+			justify-content: start;
+		}
+
+		&:hover{
+			.icon:before{
+				transition: opacity .12s;
+				opacity: 1;
+			}
+		}
+
+		.icon{
+			width: 100%;
+		}
+
+		.icon:before{
+			opacity: .3;
+			transition: opacity .12s;
+			display: block;
+			text-align: center;
+			position: static;
+			font-size: 90px;
+			width: 100%;
+			text-shadow: -2px -3px 20px black;
+
+			@media screen and (max-width: $sm) {
+				opacity: 1;
+			}
+		}
 	}
 
 	.slides{
@@ -65,10 +156,18 @@
 		background: none;
 		height: 75px;
 
+		@media screen and (max-width: $sm) {
+			height: 60px;
+		}
+
 		a .icon:before{
 			color: white;
 			text-shadow: 0px -3px 20px black;
 			font-size: 90px !important;
+
+			@media screen and (max-width: $sm) {
+				font-size: 70px !important;
+			}
 		}
 	}
 }
