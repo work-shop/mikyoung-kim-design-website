@@ -19,6 +19,10 @@
 //these variables were imported from the original style.less, and converted to scss, and then culled.
 @import 'variables';
 
+@import 'sizing';
+
+@import 'margins_and_padding';
+
 @import 'modals';
 
 @import 'upgrades';

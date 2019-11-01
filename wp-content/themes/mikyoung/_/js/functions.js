@@ -143,7 +143,7 @@ $(window).load(function() {
 			animation: 'fade',
 			controlNav: false,
 			slideshowSpeed: 7000,           
-			animationSpeed: 1500,         
+			animationSpeed: 700,         
 			directionNav: false
 		});
 	}
