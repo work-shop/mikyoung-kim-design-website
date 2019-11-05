@@ -6,7 +6,7 @@
 				<?php  while ( have_rows('stories','option') ) : the_row(); ?>
 					<div class="story-row <?php the_sub_field('row_layout'); ?>">
 
-						<div class="col story-tile story-tile-1 story-tile-<?php the_sub_field('tile_1_type'); ?>">
+						<div class="story-tile story-tile-1 story-tile-<?php the_sub_field('tile_1_type'); ?>">
 							<?php if( get_sub_field('tile_1_type') === 'project' || get_sub_field('tile_1_type') === 'news' ): ?>
 							<?php if( get_sub_field('tile_1_type') === 'project' ): ?>
 								<?php $post_object = get_sub_field('tile_1_project'); ?>
@@ -121,6 +121,7 @@
 							</div>
 						<?php endwhile; ?>
 					<?php endif; ?>
+
 				</div>
 			</section>
 		</div>	

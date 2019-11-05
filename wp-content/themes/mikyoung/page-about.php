@@ -19,7 +19,7 @@ Template Name: About
 					<?php $slide_image = get_sub_field('slide_image'); ?>
 					<li style="background-image: url('<?php echo $slide_image[sizes][slideshow]; ?>'); background-size: cover; background-position: center;">
 						<?php if(get_sub_field('slide_link')){ ?>
-						<a href="<?php the_sub_field('slide_link'); ?>">
+							<a href="<?php the_sub_field('slide_link'); ?>">
 							<?php } else{ } ?>											
 							<?php if(get_sub_field('slide_description')): ?>
 								<div class="flex-caption">
@@ -130,9 +130,9 @@ Template Name: About
 												</a>
 											</div>
 											<?php $team_count = $team_count + 1; ?>
-											<?php endif; ?>
-										<?php endwhile; ?>
-										<?php $team_count = 1; ?>
+										<?php endif; ?>
+									<?php endwhile; ?>
+									<?php $team_count = 1; ?>
 									<?php while( have_rows('team','option') ): the_row(); ?>
 										<?php
 										$image = get_sub_field('photo');
@@ -158,12 +158,12 @@ Template Name: About
 												</div>
 											</div>
 											<?php $team_count = $team_count + 1; ?>
-											<?php endif; ?>
-										<?php endwhile; ?>
-									<?php endif; ?>
-								</div>
-								<div class="modal-blanket"></div>
-							</section>	
+										<?php endif; ?>
+									<?php endwhile; ?>
+								<?php endif; ?>
+							</div>
+							<div class="modal-blanket"></div>
+						</section>	
 
 
 						<!-- <section class="about-section hidden" id="about_clients">
@@ -178,90 +178,90 @@ Template Name: About
 							<h3 class="section-heading bg-brand">Publications</h3>						
 							<h3 class="section-intro"><?php the_field('publications_introduction','option'); ?></h3>						
 							<div class="section-body row">
-								<div class="col-sm-12">						
-									<ul>
-										<?php while(has_sub_field('publications','option')): ?>
-											<li class="col-sm-3 col-xs-4"><?php $slide_image_2 = get_sub_field('publication_image','option'); ?>
-												<?php if(get_sub_field('publication_link')): ?>
-													<a href="<?php the_sub_field('publication_link','option'); ?>" target="_blank">
-													<?php endif; ?>
+								<?php while(has_sub_field('publications','option')): ?>
+									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 publication">
+										<?php $slide_image_2 = get_sub_field('publication_image','option'); ?>
+									<?php if(get_sub_field('publication_link')): ?>
+										<a href="<?php the_sub_field('publication_link','option'); ?>" target="_blank">
+										<?php endif; ?>
+										<img src="<?php echo $slide_image_2[sizes][publications]; ?>" alt="publication">
+										<h5 class="publication-source">
+											<?php the_sub_field('publication_source','option'); ?>
+										</h5>
+										<p class="publication-title">
+											<?php the_sub_field('publication_title','option'); ?>
+										</p>
+										<?php if(get_sub_field('publication_link')): ?>
+										</a>
+									<?php endif; ?>
+								</div>
+							<?php endwhile; ?>	
+						</div>
+					</section>	
 
-													<img src="<?php echo $slide_image_2[sizes][publications]; ?>" alt="publication">
-													<p><?php the_sub_field('publication_title','option'); ?></p>
-													<?php if(get_sub_field('publication_link')): ?>
-													</a>
-												<?php endif; ?>
+					<section class="about-section" id="about_jobs">
+						<h3 class="section-heading bg-brand">Jobs</h3>						
+						<h3 class="section-intro"><?php the_field('jobs_introduction','option'); ?></h3>						
+						<div class="section-body row">
+							<ul class="col-sm-12">
+								<?php while(has_sub_field('jobs','option')): ?>
+									<li>
+										<p><?php the_sub_field('job_title','option'); ?></p>
+										<p><?php the_sub_field('job_description','option'); ?>
+										<?php if(get_sub_field('job_link')): ?>
+											<a href="<?php the_sub_field('job_link','option'); ?>" target="_blank" class="bold">More Info</a>
+										<?php endif; ?>
+									</li>
+								<?php endwhile; ?>
+							</ul>			
+						</div>
+					</section>
 
-											</li>
-										<?php endwhile; ?>
-									</ul>	
-								</div>			
+					<section class="about-section" id="about_contact">
+						<h3 class="section-heading bg-brand">Contact</h3>			
+						<div class="section-body row">
+							<div class="col-sm-5">
+								<p>
+									<?php the_field('contact_info_2','option'); ?>
+								</p>
+								<p class="about-contact-social">
+									<?php get_template_part( 'social_icons'); ?>
+								</p>
 							</div>
-						</section>	
-
-						<section class="about-section" id="about_jobs">
-							<h3 class="section-heading bg-brand">Jobs</h3>						
-							<h3 class="section-intro"><?php the_field('jobs_introduction','option'); ?></h3>						
-							<div class="section-body row">
-								<ul class="col-sm-12">
-									<?php while(has_sub_field('jobs','option')): ?>
-										<li>
-											<p><?php the_sub_field('job_title','option'); ?></p>
-											<p><?php the_sub_field('job_description','option'); ?>
-												<?php if(get_sub_field('job_link')): ?>
-													<a href="<?php the_sub_field('job_link','option'); ?>" target="_blank" class="bold">More Info</a>
-												<?php endif; ?>
-											</li>
-										<?php endwhile; ?>
-									</ul>			
-								</div>
-							</section>
-
-							<section class="about-section" id="about_contact">
-								<h3 class="section-heading bg-brand">Contact</h3>			
-								<div class="section-body row">
-									<div class="col-sm-5">
-										<p>
-											<?php the_field('contact_info_2','option'); ?>
-										</p>
-										<p class="about-contact-social">
-											<?php get_template_part( 'social_icons'); ?>
-										</p>
-									</div>
-									<div class="col-sm-7">
-										<p class="section-intro-contact">
-											<?php the_field('contact_introduction','option'); ?>
-										</p>	
-									</div>
-								</div>
-							</section>																	
+							<div class="col-sm-7">
+								<p class="section-intro-contact">
+									<?php the_field('contact_introduction','option'); ?>
+								</p>	
+							</div>
 						</div>
-					</div>		
-
+					</section>																	
 				</div>
+			</div>		
 
-			</div>	
+		</div>
 
-		</section>	
+	</div>	
 
-		<section id="callout-firm" class="block callout min-small loading">
+</section>	
 
-			<?php $background_image_2 = get_field('callout_2_background_image','option'); ?>
-			<section id="callout-clients" class="block callout min padded" style="background-image: url('<?php echo $background_image_2[sizes][slideshow]; ?>')">	
+<section id="callout-firm" class="block callout min-small loading">
 
-				<div class="callout-overlay dark"></div>	
+	<?php $background_image_2 = get_field('callout_2_background_image','option'); ?>
+	<section id="callout-clients" class="block callout min padded" style="background-image: url('<?php echo $background_image_2[sizes][slideshow]; ?>')">	
 
-				<div class="container">
-					<div class="row">	
-						<div class="callout-text">
-							<h1><?php the_field('callout_2_text','option'); ?></h1>
-						</div>
-					</div>
+		<div class="callout-overlay dark"></div>	
+
+		<div class="container">
+			<div class="row">	
+				<div class="callout-text">
+					<h1><?php the_field('callout_2_text','option'); ?></h1>
 				</div>
+			</div>
+		</div>
 
-			</section>		
+	</section>		
 
 
-		<?php endwhile; ?>
+<?php endwhile; ?>
 
-		<?php get_footer();?>
+<?php get_footer();?>

@@ -112,7 +112,7 @@
 }
 
 
-#home{
+#home, #about-home{
 	&:before{
 		position: absolute;
 		content: '';
@@ -215,6 +215,16 @@
 		margin-right: -15px;
 		margin-bottom: 70px;
 
+		@media screen and (max-width: $md) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: $sm) {
+			margin-left: -10px;
+			margin-right: -10px;
+			margin-bottom: 30px;
+		}
+
 		&.two-left{
 			.story-tile-1{
 				width: 67%;
@@ -242,6 +252,12 @@
 			padding-right: 15px;
 			flex-grow: 1;
 			flex-basis: 0;
+
+			@media screen and (max-width: $sm) {
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+
 		}
 
 		.story-tile-image{
@@ -250,6 +266,11 @@
 			background-repeat: no-repeat;
 			margin-bottom: 10px;
 			border-radius: 1px;
+
+			@media screen and (max-width: $sm) {
+				height: 40vh;
+				margin-bottom: 6px;
+			}
 		}
 
 		.story-tile-label{
@@ -259,6 +280,15 @@
 			font-size: 14px;
 			margin-top: 0;
 			margin-bottom: 5px;
+
+			@media screen and (max-width: $md) {
+				font-size: 12px;
+				margin-bottom: 3px;
+			}
+
+			@media screen and (max-width: $sm) {
+				font-size: 9px;
+			}
 		}
 
 		.story-tile-title{
@@ -266,6 +296,20 @@
 			font-family: "DINNextLTPro-Medium","Helvetica Neue",Helvetica,Arial,sans-serif !important;
 			font-size: 21px;
 			width: 61%;
+
+			@media screen and (max-width: $lg) {
+				font-size: 18px;
+				width: 100%;
+			}
+
+			@media screen and (max-width: $md) {
+				font-size: 16px;
+
+			}
+
+			@media screen and (max-width: $sm) {
+				font-size: 12px;
+			}
 		}
 	}
 

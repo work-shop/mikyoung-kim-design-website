@@ -57,7 +57,7 @@
 
 	<div class="section-footer">
 		<?php if( $show_announcement || $show_news_stories ): ?>
-			<a href="#announcements-and-news" class="jump">
+			<a href="#home-stories" class="jump">
 				<?php else: ?>
 					<a href="#news" class="jump">
 					<?php endif; ?>
