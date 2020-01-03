@@ -56,6 +56,10 @@
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/isotope.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/functions.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/_/js/iso2.js"></script>
+	<?php if( is_page(3943) ): ?>
+		<script src="<?php bloginfo('template_directory'); ?>/_/js/masonry.js"></script>
+		<script src="<?php bloginfo('template_directory'); ?>/_/js/grid.js"></script>
+	<?php endif; ?>
 
 	<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-50f20b8a658458ce"></script>	

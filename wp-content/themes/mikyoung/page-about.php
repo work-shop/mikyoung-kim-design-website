@@ -174,17 +174,18 @@ Template Name: About
 							</div>
 						</section>	 -->
 
+						<?php if(false): ?>
 						<section class="about-section" id="about_publications">
 							<h3 class="section-heading bg-brand">Publications</h3>						
 							<h3 class="section-intro"><?php the_field('publications_introduction','option'); ?></h3>						
-							<div class="section-body row">
+							<div class="section-body">
 								<?php while(has_sub_field('publications','option')): ?>
-									<div class="col-lg-3 col-md-4 col-sm-4 col-xs-6 publication">
+									<div class=" publication">
 										<?php $slide_image_2 = get_sub_field('publication_image','option'); ?>
 									<?php if(get_sub_field('publication_link')): ?>
 										<a href="<?php the_sub_field('publication_link','option'); ?>" target="_blank">
 										<?php endif; ?>
-										<img src="<?php echo $slide_image_2[sizes][publications]; ?>" alt="publication">
+										
 										<h5 class="publication-source">
 											<?php the_sub_field('publication_source','option'); ?>
 										</h5>
@@ -198,6 +199,32 @@ Template Name: About
 							<?php endwhile; ?>	
 						</div>
 					</section>	
+					<?php else: ?>
+					<section class="about-section" id="about_publications">
+						<h3 class="section-heading bg-brand">Publications</h3>						
+						<h3 class="section-intro"><?php the_field('publications_introduction','option'); ?></h3>						
+						<div class="section-body row">
+							<div class="col-sm-12">						
+								<ul>
+									<?php while(has_sub_field('publications','option')): ?>
+										<li class="col-sm-3 col-xs-4"><?php $slide_image_2 = get_sub_field('publication_image','option'); ?>
+											<?php if(get_sub_field('publication_link')): ?>
+												<a href="<?php the_sub_field('publication_link','option'); ?>" target="_blank">
+											<?php endif; ?>
+									
+											<img src="<?php echo $slide_image_2[sizes][publications]; ?>" alt="publication">
+											<p><?php the_sub_field('publication_title','option'); ?></p>
+											<?php if(get_sub_field('publication_link')): ?>
+												</a>
+											<?php endif; ?>
+																														
+											</li>
+									<?php endwhile; ?>
+								</ul>	
+							</div>			
+						</div>
+					</section>	
+					<?php endif; ?>
 
 					<section class="about-section" id="about_jobs">
 						<h3 class="section-heading bg-brand">Jobs</h3>						

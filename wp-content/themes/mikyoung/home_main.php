@@ -48,7 +48,7 @@
 								<?php if( get_sub_field('tile_2_type') === 'project' ): ?>
 									<?php $post_object = get_sub_field('tile_2_project'); ?>
 									<?php elseif( get_sub_field('tile_2_type') === 'news' ): ?>	
-										<?php $post_object = get_sub_field('tile_1_news'); ?>
+										<?php $post_object = get_sub_field('tile_2_news'); ?>
 									<?php endif; ?>
 									<?php if( $post_object ): ?>	
 										<?php $post = $post_object;	setup_postdata( $post );  ?>
